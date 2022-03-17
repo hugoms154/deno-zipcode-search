@@ -6,10 +6,10 @@ Search for zip codes in Brazil via [ViaCep API](https://viacep.com.br/)
 Written in Typescript
 
 ## Requirements
-- Deno v1.20.1
-  - oak v10.4.0
-  - dotenv v3.2.0
-  - std 0.130.0
+- [Deno v1.20.1](https://deno.land/manual@v1.20.1/introduction)
+  - [oak v10.4.0](https://deno.land/x/oak@v10.4.0/README.md)
+  - [dotenv v3.2.0](https://deno.land/x/dotenv@v3.2.0/README.md)
+  - [std 0.130.0](https://deno.land/std@0.130.0/README.md)
 
 ## Run
 
