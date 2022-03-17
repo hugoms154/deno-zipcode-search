@@ -8,10 +8,7 @@ enum CepEndpoints {
 const cepRouter = new oak.Router();
 
 cepRouter
-  .get(CepEndpoints.GET_CEP, async (ctx) => {
-    const endpoint = ctx.params.cep;
-    const cep = endpoint.split("/").reverse()[0];
-
+  .get(CepEndpoints.GET_CEP, async ({ params: { cep }, ...ctx }) => {
     const viaCepHttp = ViaCepMaker();
     return ctx.response.body = await viaCepHttp.getCep(cep);
   });
